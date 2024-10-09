@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website - Sign up</title>
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="imade-left">
+            <img src="{% static 'girnar.jpg' %}" alt="Scenic View">
+        </div>
+    </div>
+    <div class="signup-container">
+        <h1>Sign Up for Gujarat Tourism</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-group">
+                <label>Full Name</label>
+                {{form.name}}
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                {{form.email}}
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                {{form.password}}
+            </div>
+            <div class="input-group">
+                <label>Confirm Password</label>
+                {{form.re_password}}
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="login-link">Already have an account? <a href="{% url 'login' %}">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>

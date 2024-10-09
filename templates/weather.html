@@ -1,0 +1,64 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{% static 'weather.css' %}">
+</head>
+<body>
+
+    <img id="logo" src="{% static 'Images/logo.png' %}">
+    <div id="titlebox">
+            <a href="{% url 'home' %}">&#9776; Home</a>
+            <h1>Weather</h1>
+    </div>
+
+
+
+    <div class="container">
+        <h1>Search Your Destinition</h1>
+        <input type="text" id="locationInput" placeholder="Enter a city">
+        <button id="searchButton">Search</button>
+        <div class="weather-info">
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <img src="" class="icon" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+        
+            <div class="footer-about">
+                <h2>Team Members</h2>
+                <ul class="team-list">
+                    <li>Viral Dobariya</li>
+                    <li>Dharmit Fadadu</li>
+                    <li>Kunj Garala</li>
+                    <li>Tirth Hansaliya</li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><span class="footer-icon">&#x1F4CD;</span> Registered office: Udyog Bhavan, Block No. 16, 4<sup>th</sup> Floor, Sector-11, Gandhinagar - 382 010</p>
+                <p><span class="footer-icon">&#x260E;</span> Toll-Free: 1800-123-456</p>
+                <p><span class="footer-icon">&#x2709;</span> contact@gujarattourism.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gujarat Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="{% static 'weather.js' %}"></script>
+</body>
+</html>

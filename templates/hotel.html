@@ -1,0 +1,273 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Page</title>
+    <link rel="stylesheet" href="{% static 'hotel.css' %}">
+    
+</head>
+<body>
+    <img id="logo" src="{% static 'Images/logo.png' %}">
+    <div id="titlebox">
+        <a href="{% url 'home' %}">&#9776; Home</a>
+        <h1>Hotels</h1>
+    </div>
+
+
+
+    <!-- Hotel Listing Section -->
+    <div class="hotel-container">
+        
+        <div class="hotel-card">
+            <a href="https://novotel.ahmedabadhotels.net/en/">
+                <img src="{% static 'Images/hotel1.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Novotel </h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="hotel-card">
+            <a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-ahmedabad?facilitatorId=RHGSEM&cid=a%3Aps+b%3Aggl+c%3Aemea+i%3Abrand+e%3Ardb+d%3Aind+r%3Abrt+f%3Aen-US+g%3Aho+h%3AINGJAMD2+v%3Acf&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6p0eJUBbpyqrLgPGzg8etLmz4M7vMUpzgeSGF2r4ORvx5VvgnI_gQoaAoPQEALw_wcB&gclsrc=aw.ds">
+                <img src="{% static 'Images/hotel2.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Radisson Blu</h3>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.hyatt.com/hyatt-regency/en-US/amdhr-hyatt-regency-ahmedabad?src=corp_swa_agn_pfxin_sem_dap_google_br_DAP_Search_Google_INDIA_None_IN_BR_AO_IN_ALL_Rooms_Ahmedabad-Local_AMDHR_BR_Exact%2BPhrase_SubBrand-City_IN_ALL_Ahmedabad-Local-DAP_hyatt+ashram+road&&src=pfxswain_sem___hyatt%20ashram%20road&mckv=s-dc_pcrid_699685691272_mtid_529dkt13792&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6q6AtveoUwH_LAnbBRH4DznOr2WSIjm1wwAp3C1aj5jvPRKpeazLYAaArRgEALw_wcB&gclsrc=aw.ds">
+                <img src="{% static 'Images/hotel3.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Hyatt </h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://res.itchotels.com/?adult=1&arrive=2024-09-26&bookingTime=Future%20Day&chain=26676&child=0&config=Business&currency=INR&depart=2024-09-27&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6q6xLAgPr__s7Tzg2KAEgbC_STHqJnN6on8gqJanmvrPuy9RaEm61AaAin4EALw_wcB&hotel=30162&hotelID=30162&journey=undefined&level=hotel&locale=en-US&productcurrency=INR&rooms=1&specialCode=NA&stayLength=1&theme=Umbrella_chain&utm_campaign=HQ-DTL%7CHTL%7CAhmedabad%7CITCNarmada%7CSearch%7CConversions%7CPANIndia%7Calways-on%7COwned%7CLC%7CGGL%7CNA%7CDesktop%7CBusiness%7CAMDLC%7CBrand&utm_content=search&utm_medium=cpc&utm_source=google">
+                <img src="{% static 'Images/hotel4.jpg' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>ITC Narmada</h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.tajhotels.com/en-in/hotels/taj-skyline-ahmedabad">
+                <img src="{% static 'Images/hotel5.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Taj Skyline</h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Location: Gandhinagar</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.marriott.com/en-us/hotels/amdcy-courtyard-ahmedabad/overview/">
+                <img src="{% static 'Images/hotel6.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Courtyard by Marriott</h3>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://stay.ahmedabadtophotels.com/en/">
+                <img src="{% static 'Images/hotel7.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>STAY INN</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.hotel-ahmedabad.net/en/property/hotel-comfort.html">
+                <img src="{% static 'Images/hotel8.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Hotel City Inn</h3>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Location: Ahmedabad</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.marriott.com/search/findHotels.mi?pageType=advanced&searchType=NearAddress&destinationAddress.location=Marriott+Surat+Hotel&nst=paid&cid=PAI_GLB00050CK_GLE000BLSV_GLF000ONTP&ppc=ppc&pId=intbppc&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6rdTtzcg25UKJ50GO8yR0_WAZ0R-mnBg5ONG6Cy4i0Q6GZY28zrpE4aAmSDEALw_wcB&gclsrc=aw.ds&view=list#/0/">
+                <img src="{% static 'Images/hotel9.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Marriott</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Surat</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.lordshotels.com/hotels/lords-plaza-surat">
+                <img src="{% static 'Images/hotel10.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Lords Plaza</h3>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Location: Surat</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://texpalazzohotel.com/">
+                <img src="{% static 'Images/hotel11.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Tex Palazzo</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Surat</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.gingerhotels.com/ginger-surat">
+                <img src="{% static 'Images/hotel12.jpg' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Ginger</h3>
+                    <p>Rating: ★★★☆☆</p>
+                    <p>Location: Surat</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.fortunehotels.in/rajkot-fortune-park-jps-grand.dh.24">
+                <img src="{% static 'Images/hotel17.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Fortune Park JPS Grand</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Rajkot</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://sayajihotels.com/">
+                <img src="{% static 'Images/hotel18.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Sayaji</h3>
+                    <p>Rating: ★★★★★</p>
+                    <p>Location: Rajkot</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.theimperialpalace.biz/">
+                <img src="{% static 'Images/hotel19.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>The Imperial Palace</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Rajkot</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://hotelevergrandpalace.in/">
+                <img src="{% static 'Images/hotel20.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Evergrand Palace</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Rajkot</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.hyatt.com/hyatt-place/en-US/bdqzv-hyatt-place-vadodara?src=corp_swa_agn_pfxin_sem_dap_google_br_DAP_Search_Google_INDIA_None_IN_BR_AO_IN_ALL_Rooms_Vadodara-Local_BDQZV_BR_Phrase_SubBrand-Property_IN_ALL_Vadodara-Local-DAP_Hotel+Hyatt+Place+Vadodara&&src=pfxswain_sem___hotel%20hyatt%20place%20vadodara&mckv=s-dc_pcrid_699663247596_mtid_529dkt13792&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6qPJz7IiVtmfymQZQEFCbS2rjUBbsCTNX3T-fY7wRq4G_rByn3tRv4aAh2YEALw_wcB&gclsrc=aw.ds">
+                <img src="{% static 'Images/hotel13.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Hyatt Place</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Vadodara</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.grandmercure.com/city/vadodara/">
+                <img src="{% static 'Images/hotel14.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Grand Mercure</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Vadodara</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.marriott.com/en-us/hotels/bdqcc-courtyard-vadodara/overview/">
+                <img src="{% static 'Images/hotel15.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Courtyard by Marriott </h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Vadodara</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="hotel-card">
+            <a href="https://www.itchotels.com/in/en/offers/fortune-festive-breaks?utm_source=IM-FPHL+fortune+festive+break&utm_medium=ppc&utm_campaign=fortune-festive-breaks&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6oFxAevdbA9mWVf6qetOthEpdBRO2oq5DodQcUd6JtnaWCnOXnd1sMaAlf-EALw_wcB">
+                <img src="{% static 'Images/hotel16.webp' %}" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h3>Fortune Inn</h3>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Location: Vadodara</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+        
+            <div class="footer-about">
+                <h2>Team Members</h2>
+                <ul class="team-list">
+                    <li>Viral Dobariya</li>
+                    <li>Dharmit Fadadu</li>
+                    <li>Kunj Garala</li>
+                    <li>Tirth Hansaliya</li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><span class="footer-icon">&#x1F4CD;</span> Registered office: Udyog Bhavan, Block No. 16, 4<sup>th</sup> Floor, Sector-11, Gandhinagar - 382 010</p>
+                <p><span class="footer-icon">&#x260E;</span> Toll-Free: 1800-123-456</p>
+                <p><span class="footer-icon">&#x2709;</span> contact@gujarattourism.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gujarat Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

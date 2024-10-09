@@ -1,0 +1,305 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Tourism</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+    <div id="headbox">
+        <div id="menubox">
+            <div class="menu" id="menu1"><a href="#mainbox" class="menua">Home</a></div>
+            <div class="menu" id="menu2"><a href="{% url 'aboutgujarat' %}" class="menua">About Gujarat</a></div>
+            <div class="menu" id="menu3"><a href="{% url 'hotel' %}" class="menua">Hotel</a></div>
+            <div class="menu" id="menu4"><a href="{% url 'weather' %}" class="menua">Weather</a></div>
+            <div class="menu" id="menu5"><a href="{% url 'shopping' %}" class="menua">Shopping</a></div>
+            <div class="menu" id="menu6"><a href="#experiencecontent" class="menua">Popular Spots</a></div>
+            <div class="menu" id="menu7"><a href="{% url 'recommendation' %}" class="menua">Recommendation</a></div>
+            <div class="menu" id="menu7"><a href="#footer" class="menua">Contact Us</a></div>
+        </div>
+        <div id="logobox"><img id="logo" src="{% static 'Images/logo.png' %}" alt="Tourism"></div>
+    </div>
+
+
+    <!-- video -->
+    <section id="mainbox">
+        <div id="bannerbox">
+            <video loop muted autoplay class="video">
+                <source src="{% static 'video.mp4' %}">
+            </video>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- slider -->
+    <section>
+        <div id="sliderbox" >
+            <div class=" bgtrev">
+                
+
+                <div id="sliderbg">
+                    <div id="img4" class="imgs"><img src="{% static 'Images/01.jpg' %}"></div>
+                    <div id="img2" class="imgs"><img src="{% static 'Images/02.jpg' %}"></div>
+                    <div id="img3" class="imgs"><img src="{% static 'Images/03.jpg' %}"></div>
+                    <div id="img5" class="imgs"><img src="{% static 'Images/04.jpg' %}"></div>
+                    <div id="img6" class="imgs"><img src="{% static 'Images/05.jpg' %}"></div>
+                    <div id="img7" class="imgs"><img src="{% static 'Images/06.jpg' %}"></div>
+                    <div id="img1" class="imgs"><img src="{% static 'Images/07.jpg' %}"></div>
+                    <div id="img8" class="imgs"><img src="{% static 'Images/08.jpg' %}"></div>
+                    <div id="img9" class="imgs"><img src="{% static 'Images/09.jpg' %}"></div>
+                    <div id="img10" class="imgs"><img src="{% static 'Images/10.jpg' %}"></div>
+
+
+                </div>
+            </div>
+            <div id="frame">
+                <div id="slider">
+                    <div id="img4" class="imgs"><img src="{% static 'Images/01.jpg' %}"></div>
+                    <div id="img2" class="imgs"><img src="{% static 'Images/02.jpg' %}"></div>
+                    <div id="img3" class="imgs"><img src="{% static 'Images/03.jpg' %}"></div>
+                    <div id="img5" class="imgs"><img src="{% static 'Images/04.jpg' %}"></div>
+                    <div id="img6" class="imgs"><img src="{% static 'Images/05.jpg' %}"></div>
+                    <div id="img7" class="imgs"><img src="{% static 'Images/06.jpg' %}"></div>
+                    <div id="img1" class="imgs"><img src="{% static 'Images/07.jpg' %}"></div>
+                    <div id="img8" class="imgs"><img src="{% static 'Images/08.jpg' %}"></div>
+                    <div id="img9" class="imgs"><img src="{% static 'Images/09.jpg' %}"></div>
+                    <div id="img10" class="imgs"><img src="{% static 'Images/10.jpg' %}"></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Fairs & Festivals -->
+    <section class="fairs-festivals" id="Fairs & Festivals">
+        <h2>Fairs & Festivals - The Life of Gujarat</h2>
+        <div class="services-container">
+        
+            <div class="service-box">
+                    <img src="{% static 'Images/11.webp' %}" alt="Rann Utsav">
+                </a>
+                <h3>Rann Utsav</h3>
+                <p>Rann Utsav is a vibrant cultural festival celebrated annually in the Kutch district of Gujarat, India. This spectacular event takes place in the white salt desert of the Great Rann of Kutch, a unique and vast expanse that turns into a surreal landscape under the moonlight.</p>
+                
+                <p class="location-date">Location: Kutch</p>
+            </div>
+            
+            <div class="service-box">
+                    <img src="{% static 'Images/12.jpeg' %}" alt="International Kite Festival">
+                </a>
+                <h3>International Kite Festival</h3>
+                <p>The International Kite Festival (Uttarayan) in Gujarat is one of the most vibrant and eagerly anticipated events in India. Celebrated primarily in Ahmedabad and across the state of Gujarat, this festival draws kite enthusiasts from around the world to participate in a spectacular display of color, creativity, and skill in the skies.</p>
+                <br>
+                <p class="location-date">Location:  Ahmedabad and other location of Gujarat</p>
+            </div>
+            
+            <div class="service-box">
+                    <img src="{% static 'Images/13.webp' %}" alt="Navratri">
+                </a>
+                <h3>Navratri</h3>
+                <p>Navaratri is one of the most vibrant and widely celebrated festivals in Gujarat, known for its grandeur, devotion, and especially for the traditional dance forms of Garba and Dandiya Raas. The festival, which spans nine nights and ten days, honors the divine feminine energy, known as Shakti, and celebrates the victory of good over evil.</p>
+                <br><br>
+                <p class="location-date">Location: All around Gujarat</p>
+            </div>
+            
+            <div class="service-box">
+                    <img src="{% static 'Images/14.webp' %}" alt="Janmashtami">
+                </a>
+                <h3>Janmashtami</h3>
+                <p>Janmashtami, also known as Krishna Janmashtami or Gokulashtami, is one of the most significant festivals in Gujarat, celebrated with great devotion and enthusiasm to mark the birth of Lord Krishna, the eighth incarnation of Lord Vishnu. The festival usually falls in August and is observed on the eighth day (Ashtami) of the Krishna Paksha (dark fortnight) in the Hindu month of Shravana.</p>
+                <p class="location-date">Location: Dwarka & Dakor Lord Krishna temples</p>
+            </div>
+            
+            <div class="service-box">
+                    <img src="{% static 'Images/15.jpg'%}" alt="Tarnetar Fair">
+                </a>
+                <h3>Tarnetar Fair</h3>
+                <p>The Tarnetar Fair is a renowned annual festival held in the Tarnetar village of Gujarat, India. Known for its vibrant celebrations and cultural significance, this fair is one of the most prominent tribal festivals in the state, drawing visitors from across India and abroad. The fair typically takes place in late September or early October, coinciding with the Hindu festival of Navaratri.</p>
+                <br>
+                <br>
+                <p class="location-date">Location: Thangadh, Surendranagar</p>
+            </div>
+            
+            <div class="service-box">
+                    <img src="{% static 'Images/16.jpg' %}" alt="Rath Yatra">
+                </a>
+                <h3>Rath Yatra</h3>
+                <p>The Rathyatra in Gujarat is one of the most celebrated and iconic festivals in the state, marked by grand processions, religious fervor, and cultural festivities. The term "Rathyatra" refers to a chariot festival where deities are paraded through the streets in massive, elaborately decorated chariots. This festival holds immense significance in Gujarat and is celebrated with great enthusiasm, particularly in the city of Ahmedabad.</p>
+                <br>
+                <p class="location-date">Location: Ahmedabad</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Popular Spots -->
+    <section class="popular-spots" id="experiencecontent">
+        <h1 class="section-heading">Popular Spots</h1>
+        <div class="spots-container">
+            <div class="arrow-left" onclick="scrollLeft()">&#10094;</div>
+            <div class="spots-wrapper">
+                <div class="spot-box">
+                    <a href="{% url 'experience1' %}">
+                        <img src="{% static 'Images/21.jpg' %}" alt="Service 1">
+                        <div class="spot-overlay">
+                            <h2>Gandhi Circuit</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience2' %}">
+                        <img src="{% static 'Images/22.jpg' %}" alt="Heritage Sites">
+                        <div class="spot-overlay">
+                            <h2>Heritage Sites</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience3' %}">
+                        <img src="{% static 'Images/23.jpg' %}" alt="Religious Sites">
+                        <div class="spot-overlay">
+                            <h2>Religious Sites</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience4' %}">
+                        <img src="{% static 'Images/24.jpg' %}" alt="Buddhist Circuit">
+                        <div class="spot-overlay">
+                            <h2>Buddhist Circuit</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience5' %}">
+                        <img src="{% static 'Images/25.jpg' %}" alt="Flora - Fauna">
+                        <div class="spot-overlay">
+                            <h2>Flora - Fauna</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience6' %}">
+                        <img src="{% static 'Images/26.jpg' %}" alt="Beaches">
+                        <div class="spot-overlay">
+                            <h2>Beaches</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience7' %}">
+                        <img src="{% static 'Images/27.jpg' %}" alt="Bird Watching Sites">
+                        <div class="spot-overlay">
+                            <h2>Bird Watching Sites</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience8' %}">
+                        <img src="{% static 'Images/28.jpg' %}" alt="Weekend Get-aways">
+                        <div class="spot-overlay">
+                            <h2>Weekend Get-aways</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience9' %}">
+                        <img src="{% static 'Images/29.png' %}" alt="Museums">
+                        <div class="spot-overlay">
+                            <h2>Museums</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience10' %}">
+                        <img src="{% static 'Images/30.jpg' %}" alt="Golf Tourism">
+                        <div class="spot-overlay">
+                            <h2>Golf Tourism</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience11' %}">
+                        <img src="{% static 'Images/31.jpg' %}" alt="Wellness Tourism">
+                        <div class="spot-overlay">
+                            <h2>Wellness Tourism</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience12' %}">
+                        <img src="{% static 'Images/32.jpg' %}" alt="Unesco World Heritage Sites">
+                        <div class="spot-overlay">
+                            <h2>Unesco World Heritage Sites</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="spot-box">
+                    <a href="{% url 'experience13' %}">
+                        <img src="{% static 'Images/33.jpg' %}" alt="Indus Valley Civilization Sites">
+                        <div class="spot-overlay">
+                            <h2>Indus Valley Civilization Sites</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="arrow-right" onclick="scrollRight()">&#10095;</div>
+            <div class="gujarat-map">
+                <img src="{% static 'Images/Gujarat-Map.png' %}" alt="Gujarat Map">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id='footer'>
+        <div class="footer-container">
+        
+            <div class="footer-about">
+                <h2>Team Members</h2>
+                <ul class="team-list">
+                    <li>Viral Dobariya</li>
+                    <li>Dharmit Fadadu</li>
+                    <li>Kunj Garala</li>
+                    <li>Tirth Hansaliya</li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><span class="footer-icon">&#x1F4CD;</span> Registered office: Udyog Bhavan, Block No. 16, 4<sup>th</sup> Floor, Sector-11, Gandhinagar - 382 010</p>
+                <p><span class="footer-icon">&#x260E;</span> Toll-Free: 1800-123-456</p>
+                <p><span class="footer-icon">&#x2709;</span> contact@gujarattourism.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gujarat Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

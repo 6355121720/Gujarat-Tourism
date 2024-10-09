@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience Of Gujarat</title>
+    <link href="{% static 'experience.css' %}" rel="stylesheet">
+    <!-- <link href="asset 0.png" rel="shortcut icon"> -->
+</head>
+<body>
+    <a id="home" href="{% url 'home' %}">&#9776; Home</a>
+    <img id="logo" src="{% static 'Images/logo.png' %}">
+    <div id="titlebox">
+            <h1>Experiences Of Gujarat</h1>
+    </div>
+    <div id="main">
+        <div id="content">
+            <h1>Indus Valley Civilization Sites</h1>
+            <br>
+            <p>
+                Gujarat is indeed a paradise for all the history lovers as it's is blessed with jaw-dropping feats accomplished by ancient civilizations. Gujarat has more than 200 Indus Valley Civilization sites.
+            </p>
+        </div>
+        <div id="photos">
+            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/indus-valley-civilization-sites/dholavira/Dholavira-Thumbnail.jpg" alt="">
+            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/lothal/Lothal-Thumbnail.jpg" alt="">
+            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/destinations/kutch/attractions/surkotada-indus-valley-civilization/surkotada-3D-2.jpg" alt="">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+        
+            <div class="footer-about">
+                <h2>Team Members</h2>
+                <ul class="team-list">
+                    <li>Viral Dobariya</li>
+                    <li>Dharmit Fadadu</li>
+                    <li>Kunj Garala</li>
+                    <li>Tirth Hansaliya</li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><span class="footer-icon">&#x1F4CD;</span> Registered office: Udyog Bhavan, Block No. 16, 4<sup>th</sup> Floor, Sector-11, Gandhinagar - 382 010</p>
+                <p><span class="footer-icon">&#x260E;</span> Toll-Free: 1800-123-456</p>
+                <p><span class="footer-icon">&#x2709;</span> contact@gujarattourism.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gujarat Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
